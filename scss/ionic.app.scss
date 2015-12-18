@@ -22,4 +22,8 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 @import "www/scss/half_chicken";
 
-
+.item-thumbnail-left {
+	img {
+		border-radius  500px;
+	}
+}
