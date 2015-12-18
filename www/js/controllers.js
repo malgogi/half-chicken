@@ -1,5 +1,6 @@
 angular.module('starter.controllers', [
-  'halfchicken.controllers.user.login'
+  'halfchicken.controllers.user',
+  'halfchicken.controllers.main'
   ])
 
 .controller('DashCtrl', function($scope) {})
