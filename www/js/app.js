@@ -64,6 +64,10 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
     url : '/setting',
     templateUrl : 'templates/setting/setting-main.html'
   })
+    .state( 'detailpage', {
+    url : '/detailpage',
+    templateUrl : 'templates/detailpage/detailpage-main.html'
+  })
 
   // setup an abstract state for the tabs directive
   .state('tab', {
