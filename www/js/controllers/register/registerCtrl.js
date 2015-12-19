@@ -46,7 +46,7 @@ angular.module('halfchicken.controllers.register', [])
 	  	searchBox = new google.maps.places.SearchBox(input);
 	  	var autocomplete = new google.maps.places.Autocomplete( input, options );
 	  	//map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-  		//autocomplete.bindTo('bounds', map);
+  		autocomplete.bindTo('bounds', map);
 
 	  searchBox.addListener('places_changed', function() {
 		    var places = searchBox.getPlaces();
@@ -106,12 +106,13 @@ $scope.disableTap = function(){
 	//$scope.openModal();
 })
 
-.directive('disabletap', function($timeout) {
+.directive('disabletap', function($timeout, $interval) {
   return {
     link: function() {
       $timeout(function() {
         container = document.getElementsByClassName('pac-container');
         // disable ionic data tab
+
         angular.element(container).attr('data-tap-disabled', 'true');
         // leave input field if google-address-entry is selected
         // angular.element(container).on("click", function(){
