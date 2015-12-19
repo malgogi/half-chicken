@@ -1,10 +1,18 @@
 <ion-modal-view id="map-view" disabletap="true">
     <ion-content scroll="false">
     	<div data-tap-disabled="true" class="list search-list">
-		  <label class="item item-input" data-tap-disabled="true">
-		    <i class="icon ion-search placeholder-icon"></i>
-		    <input id="pac-input" type="text" placeholder="Search" ng-focus="disableTap()">
-		  </label>
+            <label class="item item-input" data-tap-disabled="true">
+		      <i class="icon ion-search placeholder-icon"></i>
+		      <input id="pac-input" type="text" placeholder="Search" ng-focus="disableTap()" ng-model="shopSearchText">
+            </label>
+            <div class="dropdown dropdown-search" ng-hide = "shopSearchText === '' || shopSearchText === undefined">
+                
+                    <a class="item item-avatar" href="#" ng-repeat="shop in shopList | filter : shopSearchText" >
+                        <img ng-src="{{shop.img }}">
+                        <h2>{{ shop.name }}</h2>
+                        <p>Back off, man. I'm a scientist.</p>
+                    </a>
+            </div>
 		</div>
         <div class="map-wrapper" data-tap-disabled="true" style="height:100%">
             <div data-tap-disabled="true" id="map" style="height:100%"></div>

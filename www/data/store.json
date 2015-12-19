@@ -3,37 +3,43 @@
 		"shopId" : 1,
 		"name" : "노랑통닭 안암점",
 		"latitude" : 37.5853951,
-		"longitude" : 127.0297812
+		"longitude" : 127.0297812,
+		"img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7z-isKpyImszY3yyaNUPBdSA53lXC-ALBsRMBO4IOsNXyix4X"
 	},
 	{
 		"shopId" : 2,
-		"name" : "삼성통닭 안암점",
-		"latitude" : 37.5862835,
-		"longitude" : 127.028916
+		"name" : "동네아저씨 치킨 고대점",
+		"latitude" : 37.588337,
+		"longitude" : 127.0351201,
+		"img" : "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcShcWkFpND608yfmNnECLXU9vACKgPymS-GUagqOF160GgtWOzV"
 	},
 	{
 		"shopId" : 3,
-		"name" : "삼성통닭 안암점2",
-		"latitude" : 37.5851958,
-		"longitude" : 127.0289885
+		"name" : "삼성통닭 안암점",
+		"latitude" : 37.5862835,
+		"longitude" : 127.028916,
+		"img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTr8H74dmE5eHpZA6Cyh5bZDnr4dPbKxlnVhmqoiIzA4WXP_5C"
 	},
 	{
 		"shopId" : 4,
-		"name" : "장암사이 안암점",
-		"latitude" : 37.5842648,
-		"longitude" : 127.0300895
+		"name" : "삼성통닭 안암점",
+		"latitude" : 37.5851958,
+		"longitude" : 127.0289885,
+		"img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTr8H74dmE5eHpZA6Cyh5bZDnr4dPbKxlnVhmqoiIzA4WXP_5C"
 	},
 	{
 		"shopId" : 5,
-		"name" : "깐부치킨 고대점",
-		"latitude" : 37.5854402,
-		"longitude" : 127.0296893
+		"name" : "장암사이 안암점",
+		"latitude" : 37.5842648,
+		"longitude" : 127.0300895,
+		"img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRernlBhDnPYxW9ExMjxf_-c9BTCagOH2iZ7h7DuR9GCcuYEvOoyg"
 	},
 	{
 		"shopId" : 6,
-		"name" : "동네아저씨 치킨 고대점",
-		"latitude" : 37.588337,
-		"longitude" : 127.0351201
+		"name" : "깐부치킨 고대점",
+		"latitude" : 37.5854402,
+		"longitude" : 127.0296893,
+		"img" : "http://www.kkanbu.co.kr/new/images/main/logo.jpg"
 	}
 
 ]

@@ -58,13 +58,21 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
 
   .state( 'myPage', {
     url : '/mypage',
-    templateUrl : 'templates/mypage/mypage-main.html'
+    templateUrl : 'templates/mypage/mypage-main.html',
+    controller : 'myPageMainCtrl'
   })
+
+  .state( 'myPageModify', {
+    url : '/mypage-modify',
+    templateUrl : 'templates/mypage/mypage-modify.html'
+  })
+
   .state( 'setting', {
     url : '/setting',
     templateUrl : 'templates/setting/setting-main.html'
   })
-    .state( 'detailpage', {
+
+  .state( 'detailpage', {
     url : '/detailpage',
     templateUrl : 'templates/detailpage/detailpage-main.html'
   })

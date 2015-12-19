@@ -1,4 +1,6 @@
-angular.module('starter.services', [])
+angular.module('starter.services', [
+  'halfchicken.services.shopList'
+])
 
 .factory('Chats', function() {
   // Might use a resource here that returns a JSON array

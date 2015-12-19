@@ -9151,6 +9151,14 @@ a.button {
 .meeting-label-dark {
   background-color: #444; }
 
+.dropdown {
+  position: absolute;
+  top: 0px;
+  width: 100%; }
+
+.dropdown.dropdown-search {
+  top: 47px; }
+
 .text-center {
   text-align: center; }
 
