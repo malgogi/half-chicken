@@ -9110,6 +9110,47 @@ a.button {
 .pac-container {
   font-family: Roboto; }
 
+.meeting-label {
+  padding: 3px 5px;
+  min-width: 10px;
+  border-radius: 10px;
+  vertical-align: baseline;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0px 3px;
+  color: #fff; }
+
+.meeting-label-positive {
+  background-color: #387ef5; }
+
+.meeting-label-light {
+  background-color: #fff;
+  color: #444; }
+
+.meeting-label-stable {
+  background-color: #f8f8f8; }
+
+.meeting-label-calm {
+  background-color: #11c1f3; }
+
+.meeting-label-balanced {
+  background-color: #33cd5f; }
+
+.meeting-label-energized {
+  background-color: #ffc900; }
+
+.meeting-label-assertive {
+  background-color: #ef473a; }
+
+.meeting-label-royal {
+  background-color: #886aea; }
+
+.meeting-label-dark {
+  background-color: #444; }
+
 .text-center {
   text-align: center; }
 

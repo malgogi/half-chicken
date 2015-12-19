@@ -1,0 +1,39 @@
+[
+	{
+		"shopId" : 1,
+		"name" : "노랑통닭 안암점",
+		"latitude" : 37.5853951,
+		"longitude" : 127.0297812
+	},
+	{
+		"shopId" : 2,
+		"name" : "삼성통닭 안암점",
+		"latitude" : 37.5862835,
+		"longitude" : 127.028916
+	},
+	{
+		"shopId" : 3,
+		"name" : "삼성통닭 안암점2",
+		"latitude" : 37.5851958,
+		"longitude" : 127.0289885
+	},
+	{
+		"shopId" : 4,
+		"name" : "장암사이 안암점",
+		"latitude" : 37.5842648,
+		"longitude" : 127.0300895
+	},
+	{
+		"shopId" : 5,
+		"name" : "깐부치킨 고대점",
+		"latitude" : 37.5854402,
+		"longitude" : 127.0296893
+	},
+	{
+		"shopId" : 6,
+		"name" : "동네아저씨 치킨 고대점",
+		"latitude" : 37.588337,
+		"longitude" : 127.0351201
+	}
+
+]

@@ -1,0 +1,61 @@
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+
+.meeting-label {
+	padding: 3px 5px;
+    min-width: 10px;
+    border-radius: 10px;
+    vertical-align: baseline;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    margin : 0px 3px;
+    color : $light;
+}
+
+.meeting-label-positive {
+	background-color : $positive;
+}
+
+.meeting-label-light {
+	background-color : $light;
+	color : $dark;
+}
+
+.meeting-label-stable {
+	background-color : $stable;
+}
+
+.meeting-label-calm {
+	background-color : $calm;
+	
+}
+
+.meeting-label-balanced {
+	background-color : $balanced;
+}
+
+.meeting-label-energized {
+	background-color : $energized;
+}
+
+.meeting-label-assertive {
+	background-color : $assertive;
+}
+
+.meeting-label-royal {
+	background-color : $royal;
+}
+
+.meeting-label-dark {
+	background-color : $dark;
+}

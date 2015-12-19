@@ -3,6 +3,9 @@ angular.module('halfchicken.controllers.user.login', [])
 	$scope.move = {
 		main : function () {
 			$state.go( 'main' );
+		},
+		signUp : function () {
+			$state.go( 'signup' );
 		}
 	};
 	$http.get( DEPLOY_SERVER_URL + '/things' ).then( function ( response ) {
