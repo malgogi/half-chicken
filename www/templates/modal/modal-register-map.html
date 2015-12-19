@@ -1,0 +1,18 @@
+<ion-modal-view id="map-view" disabletap="true">
+    <ion-content scroll="false">
+    	<div data-tap-disabled="true" class="list search-list">
+		  <label class="item item-input" data-tap-disabled="true">
+		    <i class="icon ion-search placeholder-icon"></i>
+		    <input id="pac-input" type="text" placeholder="Search" ng-focus="disableTap()">
+		  </label>
+		</div>
+        <div class="map-wrapper" data-tap-disabled="true" style="height:100%">
+            <div data-tap-disabled="true" id="map" style="height:100%"></div>
+        </div>
+     	
+     	<button class="button button-full button-positive button-map-register">
+    		등록
+    	</button>
+    </ion-content>
+    
+</ion-modal-view>

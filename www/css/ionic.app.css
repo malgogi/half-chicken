@@ -9082,6 +9082,14 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+#map-view .search-list {
+  margin-bottom: 0px; }
+
+#map-view .button.button-map-register {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 0px; }
+
 .text-center {
   text-align: center; }
 
