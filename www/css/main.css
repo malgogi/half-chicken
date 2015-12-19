@@ -4,8 +4,8 @@
     appearance: none;
     position: absolute;
     top: 0;
+    margin-left: 70px;
     bottom: 0;
-    margin-left: 50px;
     /* right: 0; */
     padding: 0 48px 0 16px;
     max-width: 65%;
@@ -19,6 +19,7 @@
     cursor: pointer;
     direction: rtl;
 }
+
 .input-label {
     display: table;
     padding: 0px 0px 0px 0px;
