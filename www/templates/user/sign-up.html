@@ -1,13 +1,13 @@
 <ion-view view-title="회원가입">
 	<ion-content>
 		<div class="row">
-			<img src="img/user-default.png" width="100px" height="100px" style="margin : 10px auto;border-radius:100px;">
+			<img ng-src="{{ user.img }}" width="100px" height="100px" style="margin : 10px auto;border-radius:100px;">
 
 		</div>
 		<div class="row">
 			<div class="col col-offset-33 col-33 text-center">
-				<button class="button button-outline button-positive">
-					사진 등록하기
+				<button class="button button-outline button-positive" ng-click="getPicture()">
+					사진 등록
 				</button>
 			</div>
 		</div>
@@ -15,16 +15,16 @@
 			<div class="col col-center col-offset-10 col-80">
 				<div class="list">
 					<label class="item item-input">
-				    	<input type="email" placeholder="ID">
+				    	<input type="text" placeholder="ID" ng-model="user.id">
 				  	</label>
 				  	<label class="item item-input">
-				    	<input type="email" placeholder="이메일">
+				    	<input type="email" placeholder="이메일" ng-model="user.email">
 				  	</label>
 				  	<label class="item item-input">
-				    	<input type="password" placeholder="비밀번호">
+				    	<input type="password" placeholder="비밀번호" ng-model="user.password">
 				  	</label>
 				  	<label class="item item-input">
-				    	<input type="password" placeholder="비밀번호 확인">
+				    	<input type="password" placeholder="비밀번호 확인" ng-model="user.confirmPassword">
 				  	</label>
 				</div>
 			</div>

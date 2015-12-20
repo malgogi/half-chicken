@@ -1,13 +1,13 @@
 <ion-view view-title="회원정보 수정">
 	<ion-content>
 		<div class="row">
-			<img src="img/user-default.png" width="100px" height="100px" style="margin : 10px auto;border-radius:100px;">
+			<img ng-src="{{ img.user }}" width="100px" height="100px" style="margin : 10px auto;border-radius:100px;">
 
 		</div>
 		<div class="row">
 			<div class="col col-offset-33 col-33 text-center">
-				<button class="button button-outline button-positive">
-					사진 변경하기
+				<button class="button button-outline button-positive" ng-click="getPicture()">
+					사진 변경
 				</button>
 			</div>
 		</div>

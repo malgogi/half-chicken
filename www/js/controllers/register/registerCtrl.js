@@ -3,22 +3,78 @@ angular.module('halfchicken.controllers.register', [])
 
 	var map, markers = [];
 	$scope.shopList = [];
+	$scope.meeting = {
+		shop : {
+			name : '',
+			shopId : '',
+			latitude : 0,
+			longitude : 0
+		}
+	};
+
+	$scope.modalInfo = {
+		searchText : '',
+
+	};
 
 	$ionicModal.fromTemplateUrl('templates/modal/modal-register-map.html', {
 		scope: $scope,
 		animation: 'slide-in-up'
 	}).then(function(modal) {
 		$scope.modal = modal;
-		$scope.modal.show();
-		initMap();
 	});
 
 	$scope.openModal = function() {
+		console.log('zzz');
 		$scope.modal.show();
+		initMap();
 	};
 
 	$scope.closeModal = function() {
 		$scope.modal.hide();
+	};
+
+	$scope.pickStore = function ( store ) {
+		$scope.clearMarker( map, markers);
+		$scope.addMarker( map, markers, store );
+		$scope.meeting.shop = store;
+		console.log ( store );
+	};
+
+	$scope.registerStore = function() {
+		$scope.closeModal();
+	};
+
+	$scope.addMarker = function ( map, markers, store ) {
+	    var icon = {
+			url: store.img,
+			size: new google.maps.Size(71, 71),
+			origin: new google.maps.Point(0, 0),
+			anchor: new google.maps.Point(17, 34),
+			scaledSize: new google.maps.Size(25, 25)
+		};
+
+		var latLng = { lat : store.latitude, lng : store.longitude };
+		// Create a marker for each place.
+		markers.push(new google.maps.Marker({
+			map: map,
+			icon: icon,
+			title: store.name,
+			position: latLng
+		}));
+
+		map.setCenter( latLng );
+	};
+
+	$scope.removeMarker = function ( map, markers, idx ) {
+
+	};
+
+	$scope.clearMarker = function ( map, markers ) {
+		markers.forEach(function(marker) {
+			marker.setMap(null);
+		});
+		markers = [];
 	};
 
 	//Cleanup the modal when we're done with it!
@@ -35,79 +91,14 @@ angular.module('halfchicken.controllers.register', [])
 	$scope.$on('modal.removed', function() {
 		// Execute action
 	});
-
-	$scope.addMarker = function ( map, markers, addMarker ) {
-
-	};
-
-	$scope.removeMarker = function ( map, markers, idx ) {
-
-	};
-
-	$scope.clearMarker = function ( map, markers ) {
-		markers.forEach(function(marker) {
-			marker.setMap(null);
-		});
-		markers = [];
-	};
 	
 	function initMap() {
 		  map = new google.maps.Map(document.getElementById('map'), {
-		    center: {lat: -34.397, lng: 150.644},
-		    zoom: 8
+		    center: {lat: 37.586296, lng: 127.0269483},
+		    zoom: 17
 		  });
-	  	//input = document.getElementById('pac-input');
-	  	// var options = {
-	  	// 	types: ['geocode']
-	  	// };
-	  	//searchBox = new google.maps.places.SearchBox(input);
-	  // 	//var autocomplete = new google.maps.places.Autocomplete( input, options );
-	  // 	//map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-  	// 	autocomplete.bindTo('bounds', map);
+	};
 
-	  // searchBox.addListener('places_changed', function() {
-		 //    var places = searchBox.getPlaces();
-
-		 //    if (places.length == 0) {
-		 //      return;
-		 //    }
-
-		 //    // Clear out the old markers.
-		 //    markers.forEach(function(marker) {
-		 //      marker.setMap(null);
-		 //    });
-		 //    markers = [];
-
-		 //    // For each place, get the icon, name and location.
-		 //    var bounds = new google.maps.LatLngBounds();
-		 //    places.forEach(function(place) {
-		 //      var icon = {
-		 //        url: place.icon,
-		 //        size: new google.maps.Size(71, 71),
-		 //        origin: new google.maps.Point(0, 0),
-		 //        anchor: new google.maps.Point(17, 34),
-		 //        scaledSize: new google.maps.Size(25, 25)
-		 //      };
-
-		 //      // Create a marker for each place.
-		 //      markers.push(new google.maps.Marker({
-		 //        map: map,
-		 //        icon: icon,
-		 //        title: place.name,
-		 //        position: place.geometry.location
-		 //      }));
-
-		 //      if (place.geometry.viewport) {
-		 //        // Only geocodes have viewport.
-		 //        bounds.union(place.geometry.viewport);
-		 //      } else {
-		 //        bounds.extend(place.geometry.location);
-		 //      }
-		 //    });
-		 //    map.fitBounds(bounds);
-		 //  });
-	  //map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-	}
 	// Fixe for ngAutocomplete
 	$scope.disableTap = function(){
 	    container = document.getElementsByClassName('pac-container');

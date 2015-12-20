@@ -2,9 +2,9 @@
 	<ion-content scroll="false">
 		<!-- <ion-google-place placeholder="Enter an address, Apt# and ZIP" ng-model="location" /> -->
 		<div class="list">
-			<label class="item item-input">
+			<label class="item item-input" ng-click="openModal()">
 		  		<span class="input-label">장소</span>
-		  		<div ng-click="showMap()">zzzzz</div>
+		  		<div > {{ meeting.shop.name || '장소를 등록해주세요.' }}</div>
 		  	</label>	
 		  	<label class="item item-input">
 		  		<span class="input-label">날짜</span>

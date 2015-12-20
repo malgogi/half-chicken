@@ -7,11 +7,11 @@
             </label>
             <div class="dropdown dropdown-search" ng-hide = "shopSearchText === '' || shopSearchText === undefined">
                 
-                    <a class="item item-avatar" href="#" ng-repeat="shop in shopList | filter : shopSearchText" >
-                        <img ng-src="{{shop.img }}">
+                    <div class="item item-avatar" ng-repeat="shop in shopList | filter : shopSearchText" ng-click="pickStore( shop )">
+                        <img ng-src="{{ shop.img }}">
                         <h2>{{ shop.name }}</h2>
                         <p>Back off, man. I'm a scientist.</p>
-                    </a>
+                    </div>
             </div>
 		</div>
         <div class="map-wrapper" data-tap-disabled="true" style="height:100%">
