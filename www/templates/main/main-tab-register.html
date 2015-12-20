@@ -1,0 +1,95 @@
+<ion-view view-title="일인반닭">
+	<ion-nav-buttons side="right">
+		<button class="button button-clear icon ion-plus-round" ui-sref="register">
+      	</button>
+
+		<button class="button button-clear icon ion-person" ui-sref="myPage">
+      	</button>
+
+      	<button class="button button-clear icon ion-gear-a" ui-sref="setting">
+      	</button>
+    </ion-nav-buttons>
+
+	<ion-content class="has-tabs-top">
+		
+		<div class="row">
+			<div class="col col-50 list">
+				<div class="item item-input item-select">
+					<div class="input-label">
+						장소:
+					</div>
+					<select style="display:block"; "margin: auto">
+						<option>Blue</option>
+						<option selected>Green</option>
+						<option>Red</option>
+					</select>
+				</div>
+			</div>
+			<div class="col col-50 list">
+				<div class="item item-input item-select">
+					<div class="input-label">
+						날짜:
+					</div>
+					<select style="display:block"; "margin: auto">
+						<option>Blue</option>
+						<option selected>Green</option>
+						<option>Red</option>
+					</select>
+				</div>
+			</div>
+		</div>
+
+
+		<ion-list class="list">
+		    <ion-item class="item item-thumbnail-left" ui-sref="main.register-detail">
+				<img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg">
+				
+				<h2>말다리
+					<!-- <span class="meeting-label meeting-label-energized">양념 치킨</span> -->
+					<span class="meeting-label meeting-label-calm">7월 3일</span>
+					<span class="meeting-label meeting-label-energized">고대 동네아저씨 치킨</span>
+				</h2>
+				<p>이대 치킨각? 이대 치킨각? 이대 치킨각? 이대 치킨각?이대 치킨각? 이대 치킨각?이대 치킨각?
+					이대 치킨각? 이대 치킨각? 이대 치킨각? 이대 치킨각? 이대 치킨각? 이대 치킨각?
+				</p>
+				<ion-option-button class="button-positive"
+                       ng-click="share(item)">
+			      Share
+			    </ion-option-button>
+			    <ion-option-button class="button-info"
+			                       ng-click="edit(item)">
+			      Edit
+			    </ion-option-button>
+			    <!-- <span class="badge badge-assertive">D - 165일</span>
+			    <span class="badge badge-positive">D - 165일</span> -->
+		    </ion-item>
+		    <ion-item class="item item-thumbnail-left" ui-sref="detailpage">
+				<img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg">
+				<h2>말다리</h2>
+				<p>이대 치킨각?</p>
+				<ion-option-button class="button-positive"
+                       ng-click="share(item)">
+			      Share
+			    </ion-option-button>
+			    <ion-option-button class="button-info"
+			                       ng-click="edit(item)">
+			      Edit
+			    </ion-option-button>
+		    
+		    </ion-item>
+		    <ion-item class="item item-thumbnail-left" ui-sref="detailpage">
+				<img src="https://cdn.photographylife.com/wp-content/uploads/2014/06/Nikon-D810-Image-Sample-6.jpg">
+				<h2>말다리</h2>
+				<p>이대 치킨각?</p>
+				<ion-option-button class="button-positive"
+                       ng-click="share(item)">
+			      Share
+			    </ion-option-button>
+			    <ion-option-button class="button-info"
+			                       ng-click="edit(item)">
+			      Edit
+			    </ion-option-button>
+		    </ion-item>
+		</ion-list>
+	</ion-content>
+</ion-view>

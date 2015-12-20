@@ -2,7 +2,7 @@ angular.module('halfchicken.controllers.user.login', [])
 .controller('logInCtrl', function( $scope, $http, DEPLOY_SERVER_URL, $state ){
 	$scope.move = {
 		main : function () {
-			$state.go( 'main' );
+			$state.go( 'main.register' );
 		},
 		signUp : function () {
 			$state.go( 'signup' );

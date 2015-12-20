@@ -47,8 +47,45 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state( 'main', {
     url : '/main',
     templateUrl : 'templates/main/main.html',
-    controller : 'mainCtrl'
+    abstract: true
   })
+    .state('main.register', {
+      url: '/main-register',
+      views: {
+        'tab-register': {
+          templateUrl : 'templates/main/main-tab-register.html',
+          controller : 'mainCtrl'
+        }
+      }
+    })
+      .state( 'main.register-detail', {
+        url : '/register-detail',
+        views : {
+          'tab-register' : {
+            templateUrl : 'templates/detailpage/detailpage-main.html'    
+          }
+        }
+        
+      })
+    .state('main.apply', {
+      url: '/main-apply',
+      views: {
+        'tab-apply': {
+          templateUrl : 'templates/main/main-tab-apply.html',
+          controller : 'mainCtrl'
+        }
+      }
+    })
+      .state( 'main.apply-detail', {
+        url : '/apply-detail',
+        views : {
+          'tab-apply' : {
+            templateUrl : 'templates/detailpage/detailpage-main.html'    
+          }
+        }
+        
+      })
+
 
   .state( 'register', {
     url : '/register',
@@ -70,11 +107,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services', '
   .state( 'setting', {
     url : '/setting',
     templateUrl : 'templates/setting/setting-main.html'
-  })
-
-  .state( 'detailpage', {
-    url : '/detailpage',
-    templateUrl : 'templates/detailpage/detailpage-main.html'
   })
 
   // setup an abstract state for the tabs directive
